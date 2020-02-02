@@ -1422,19 +1422,36 @@
 // for(let l of lines) {
 //   console.log(l);
 // }
-const posts = [
-  {
-  text: 'JabaScriptの勉強中…',
-  likeCount: 0,
-    show() {
-    console.log(`${this.text} - ${this.likeCount}いいね`);
-    }
-  },
-  {
-  text: 'プログラミング楽しい…',
-  likeCount: 0,
-  },
+// const posts = [
+//   {
+//   text: 'JabaScriptの勉強中…',
+//   likeCount: 0,
+//     show() {
+//     console.log(`${this.text} - ${this.likeCount}いいね`);
+//     }
+//   },
+//   {
+//   text: 'プログラミング楽しい…',
+//   likeCount: 0,
+//   },
+//   ];
+  
+  
+//   posts[0].show();
+class Post {
+  constructor(text) {
+  this.text = text;
+  this.likeCount = 0;
+  }
+  
+  show() {
+  console.log(`${this.text} - ${this.likeCount}いいね`);
+  }
+  }
+  const posts = [
+  new Post('JabaScriptの勉強中…'),
+  new Post('プログラミング楽しい…'),
   ];
   
-  
   posts[0].show();
+  posts[1].show();
