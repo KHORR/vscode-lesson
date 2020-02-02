@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">  
+    <title>VScode Test</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <!-- ↓deferをとるとwidow.loadの記述なしでもうまく動いた -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script> -->
+  </head>
+
+<body>
+  <h1 class = mystyle>タイトル</h1>
+  <button>もっと読む</button>
+  <div id="result"></div>
+  raisennsu 
+     <p>テスト</p>
+  <div id=wrapper>
+    <!-- <a href = "text.html">リンク</a> -->
+    <a href = "one.html">リンク1</a>    
+    <a href = "two.html">リンク2</a>
+    <a href = "three.html">リンク3</a>
+    <p>children</p>
+    <p><a href="http://google.com">Google</a></p>
+    <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
+    <p><a href="http://dotinstall.com">Dotinstall</a></p>
+  </div>
+
+  <button>Add!</button>
+
+
+
+    <input type="text" id="name" value="hello">
+    <select id="members" name="members" value="name">
+      <option>taguchi</option>
+      <option>fkoji</option>
+      <option>dotinstall</option>
+  </select>
+  <div id="box" style="width:100px;height:100px;background:red;">
+    <p>テキスト</p>
+  </div>
+  <ul id="main">
+      <li>0</li>
+      <li class="item">1</li>
+      <li class="item">5</li>
+      <li>
+        <ul id ="sub">
+          <li>3-0</li>
+          <li>3-1</li>
+          <li class="item">3-2</li>
+          <li class="item">3-3</li>
+          <li>3-4</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="main.js"></script> -->
+  <script>
+  'use strict';  
+    //   $(function() {
+    //   // $('a').attr('href','new.html');
+    //   $('h1').css('color','red');
+    // });
+    // window.onload = function() {
+      // $('a').attr('href','new.html');
+    //   $('h1').css('color','red').hide('slow');
+    // };
+    // window.onload = function() {
+    //   var li = $('<li>').text('just added');
+    //     $('ul > li:eq(1)').before(li);
+    // };
+    
+   
+  // console.log('Hello world!')
+  // console.log('Hello world! again')
+//   $(function(){
+//   const characters = [
+//     {name: "にんじゃわんこ", age: 14},
+//     {name: "ひつじ仙人", age: 1000}
+//     ];
+//     console.log(characters[1].name);
+// });
+// window.onload = function() {
+//   $('#main > .item').css('color','red');
+// };
+
+  </script>
+  <style>
+  .mystyle {
+    border:5px solid green;
+    background-color: yellowgreen;
+    font-size: 48px;
+  }
+  #box:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  </style>
+</body>
+</html>
