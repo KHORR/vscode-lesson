@@ -1,67 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML/CSSでWebページ作成</title>
-        <link rel="stylesheet" href="kadai.css">
-    </head>
-    <body>
-        <header>
-            <div class="box-logo">
-            Logo
-            </div>
-        </header>
-        <div>
-          <nav id="navlink">
-            <ul>
-              <li><a href="">Menu1</a></li>
-              <li><a href="">Menu2</a></li>
-              <li><a href="">Menu2</a></li>
-              <li><a href="">Menu4</a></li>
-              <li><a href="">Menu5</a></li>
-            </ul>
-          </nav>
-        <div id="wrapper" class="clearfix">
-            <nav id="menu"> 
-                <ul>
-                    <li>Webサイトの仕組み</li>
-                    <li>HTMLとCSSの仕組み</li>
-                    <li>HTMLの基本</li>
-                    <li>head要素内の記述</li>
-                    <li>body要素内の記述</li>
-                    <!-- <li>id属性とclass属性</li>
-                    <li>HTMLチュートリアル</li> -->
-                </ul>
-            </nav>
-            <div id="main">
-              <dix class="box">
-                <h2>タイトル</h2>
-                <div class="box-inner1">
-                  box-inner1
-                  <div class="box-inner2">
-                    box-inner2
-                  </div>
-                  <div class="box-inner1-content">
-                    <h3>タイトル</h3>
-                    <p>説明</p>
-                    <p>日付</p>
-                    <p>名前</p>
-                  </div>
-                </div>
-              </dix>
-                <h1>HTML/CSSでWebページ作成</h1>
-                <h2>Webサイトの仕組み</h2>
-                <p>Webサイトとは、Webページをひとまとまりにして公開したWebページの集まりのことです。</p>
-                <h3>Webブラウザとは</h3>
-                <p>Webブラウザの説明が入ります。</p>
-                <h3>Webページの構成</h3>
-                <p>webページの構成の説明が入ります。</p>
-                <h3>Webページの表示</h3>
-                <p>Webページの表示の説明が入ります。</p>
-            </div>
-        </div>
-        <footer>
-            ここはフッターです
-        </footer>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML/CSSでWebページ作成</title>
+  <link rel="stylesheet" href="kadai.css"> </head>
+<body>
+  <header id="header"> Logo </header>
+  <div id="main-contents-wrapper">
+    <nav id="main-contents-navigation">
+      <ul>
+        <li>Webサイトの仕組み</li>
+        <li>HTMLとCSSの仕組み</li>
+        <li>HTMLの基本</li>
+        <li>head要素内の記述</li>
+        <li>body要素内の記述</li>
+      </ul>
+    </nav>
+    <main id="main-contents-main">
+      <h1>HTML/CSSでWebページ作成</h1>
+      <h2>Webサイトの仕組み</h2>
+      <p>Webサイトとは、Webページをひとまとまりにして公開したWebページの集まりのことです。</p>
+      <h3>Webブラウザとは</h3>
+      <p>Webブラウザの説明が入ります。</p>
+      <h3>Webページの構成</h3>
+      <p>webページの構成の説明が入ります。</p>
+      <h3>Webページの表示</h3>
+      <p>Webページの表示の説明が入ります。</p>
+    </main>
+  </div>
+  <footer id="footer"> ここはフッターです </footer>
+</body>
 </html>

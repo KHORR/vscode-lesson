@@ -1437,21 +1437,14 @@
 //   ];
   
   
-//   posts[0].show();
-class Post {
-  constructor(text) {
-  this.text = text;
-  this.likeCount = 0;
-  }
+// //   posts[0].show();
+const half = (number) => {
+  // numberを2で割った値を戻り値として返してください
+  return number / 2;
+  };
   
-  show() {
-  console.log(`${this.text} - ${this.likeCount}いいね`);
-  }
-  }
-  const posts = [
-  new Post('JabaScriptの勉強中…'),
-  new Post('プログラミング楽しい…'),
-  ];
+  // 定数resultを定義してください
+  const result = half(130);
   
-  posts[0].show();
-  posts[1].show();
+  // 「130の半分は〇〇です」となるように出力してください
+  console.log(`130の半分は${result}です`);

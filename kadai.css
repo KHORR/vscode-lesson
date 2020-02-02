@@ -1,9 +1,10 @@
 @charset "UTF-8";
 header {
+  width:100%;
+  max-width: 900px;
+  margin:0 auto;
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #ffccff;
 }
 
 .box-logo {
@@ -13,19 +14,6 @@ header {
   text-align: center;
   top:calc(50%-25px);
   left:calc(50%-25px);
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0 50px;  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: yellow;
-}
-#navlink nav li {
-  width: 100px;
-  text-align: center;
 }
 /* チャプター：全体の設定 */
 body {
@@ -44,30 +32,21 @@ p {
     line-height: 1.6;
 }
 
-#wrapper {
-    width: 980px;
-    /* display: flex; */
-  
-}
-
-#menu {
-    font-size: 16px;
-    background: #ccccff;
+#main-contents-wrapper {
+    width: 100%;
+    max-width:900px;
+    margin: 0 auto;
+    background: orange;
+    display: flex;
+  }
+#main-contents-navigation {
+    background: palegreen;
     width: 30%;
-    float: right;
-}
-#main {
-    background: #ccffcc;
+  }
+  #main-contents-wrapper > #main-contents-main { 
+    background: yellow;
     width: 70%;
-    /* flex:1; */
-    float: left;
-}
-
-
-.clearfix::after {
-    content: 'ここにfloatを解除するためのclearfix::afterが入っている';
-    display: block;
-    clear: both;
+    padding: 10px 20px;
 }
 
 
@@ -89,19 +68,6 @@ p {
   width: 300px;
   height: 100px;
   background-color: orange;
-  /* position: absolute; */
-}
-.box-inner1-content {
-  float: right;
-}
-.box-inner2 {
-  margin-top: 5px;
-  margin-left: 10px;
-  border: 3px solid green;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: yellow;
   /* position: absolute; */
 }
 #main h1 {
