@@ -211,3 +211,7 @@
 # p hash.value?(10)
 # puts "id: %05d, rate: %10.2f" %[355,3.284]
 # # # name = "TAGUCHI"
+# # elements = [[1, 4], [2, 3], [3, 6]]
+for i in 1..10
+  puts(i)
+end

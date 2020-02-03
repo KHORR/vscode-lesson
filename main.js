@@ -1443,8 +1443,9 @@ const half = (number) => {
   return number / 2;
   };
   
-  // 定数resultを定義してください
-  const result = half(130);
+  // // 定数resultを定義してください
   
-  // 「130の半分は〇〇です」となるように出力してください
-  console.log(`130の半分は${result}です`);
+const animals = ["dog", "cat", "sheep"];
+for(let i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+};

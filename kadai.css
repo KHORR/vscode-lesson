@@ -39,7 +39,7 @@ p {
     background: orange;
     display: flex;
   }
-#main-contents-navigation {
+  #main-contents-navigation {
     background: palegreen;
     width: 30%;
   }
@@ -85,10 +85,12 @@ p {
 
 header {
     background: #ffcccc;
-    width: 1000px;
+    width: 100%;
+    max-width:900px;
 }
 
 footer {
     background: #ffccff;
-    width: 1000px;
+    width: 100%;
+    max-width:900px;
 }
