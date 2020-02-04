@@ -211,7 +211,43 @@
 # p hash.value?(10)
 # puts "id: %05d, rate: %10.2f" %[355,3.284]
 # # # name = "TAGUCHI"
-# # elements = [[1, 4], [2, 3], [3, 6]]
-for i in 1..10
-  puts(i)
+# # # # elements = [[1, 4], [2, 3], [3, 6]]
+# module Greet
+# class Greet
+# module Greet
+#   def say
+#   puts "Hello"
+#   end
+# end
+  
+#   # obj = Object.new
+#   # obj = Greet.new
+#   obj = Object.new
+#   # obj.extend Greet
+#   # obj.extend Greet
+#   obj.say
+class HelloRuby
+def self.greeting
+puts("Hello! Ruby!")
 end
+end
+HelloRuby.greeting
+
+class HelloRuby
+def foo
+puts("foo")
+end
+end
+class << HelloRuby
+def greeting
+puts("Hello! Ruby!")
+end
+end
+HelloRuby.greeting
+
+class HelloRuby
+def HelloRuby.greeting
+puts("Hello! Ruby!")
+end
+end
+HelloRuby.greeting
