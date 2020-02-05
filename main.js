@@ -1437,15 +1437,19 @@
 //   ];
   
   
-// //   posts[0].show();
-const half = (number) => {
-  // numberを2で割った値を戻り値として返してください
-  return number / 2;
-  };
+// // //   posts[0].show();
+// const half = (number) => {
+//   // numberを2で割った値を戻り値として返してください
+//   return number / 2;
+//   };
   
-  // // 定数resultを定義してください
+  // // // 定数resultを定義してください
+  // // const d = [2019, 11, 14];const point = {
+ 
+ 
   
-const animals = ["dog", "cat", "sheep"];
-for(let i = 0; i < animals.length; i++) {
-  console.log(animals[i]);
-};
+    // const prices = [180, 190, 200];
+    // const updatedPrices = prices.forEach(price => {
+    //   return price + 20;
+    // });
+    // console.log(updatedPrices);
