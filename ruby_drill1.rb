@@ -225,4 +225,4 @@
 #   obj = Object.new
 #   # obj.extend Greet
 #   # obj.extend Greet
-# # # #   obj.say
+# # # # #   obj.say

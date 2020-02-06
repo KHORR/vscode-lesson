@@ -1453,3 +1453,54 @@
     //   return price + 20;
     // });
     // console.log(updatedPrices);
+    
+ 
+      
+
+// 「〇〇歳です」を出力してください
+// const characters = [
+//   {name: "にんじゃわんこ", age: 14},
+//   {name: "ひつじ仙人", age: 100},
+//   {name: "ベイビーわんこ", age: 5},
+//   ];
+  
+//   // for文を完成させてください
+//   for (let i = 0; i < characters.length; i++) {
+//   console.log("--------------------");
+  
+//   // 定数characterを定義してください
+//   const character = characters[i];
+  
+//   // 「名前は〇〇です」を出力してください
+//   console.log(`名前は${character.name}です`);
+  
+//   // 「〇〇歳です」を出力してください
+//   console.log(`${character.age}歳です`);
+  
+//   }
+  
+// $('button').click(function() {
+//   var p = $('<p>').text('vanish!').addClass('vanish');
+//   $(this).before(p);
+//   });
+  
+//   $('body').on(click',.vanish',function() {
+//   $(this).remove();
+// // //   });
+class Post {
+  constructor(text) {
+  this.text = text;
+  this.likeCount = 0;
+  }
+    
+  show() {
+  console.log(`${this.text} - ${this.likeCount}いいね`);
+  }
+}
+const posts = [
+  new Post('JabaScriptの勉強中…'),
+  new Post('プログラミング楽しい…')
+]
+  // show(posts[0]);
+  posts[0].show();
+  posts[1].show();
