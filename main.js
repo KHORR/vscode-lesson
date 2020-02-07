@@ -534,7 +534,7 @@
         
           // 
         //  console.log(Math.floor(Math.random() * 6)  1);
-        // const scores = [10, 3, 9]
+        // // // // // 
         // scores.forEach(score => {
           // const scores = [80, 90, 40, 100];
 
@@ -597,7 +597,7 @@
 
           // var li = $('<li>').text('just added');
           // $('ul').append(li);
-          // const scores = [10, 3, 9]
+          // // // // // 
           // let sum = 0;
           // scores.forEach(score => {
           //   sum += score;
@@ -620,7 +620,7 @@
           //   };
           //   setTimeout(showTime, 5000);
     //  let sum =0;
-    //       const scores = [10, 3, 9]
+    //       // // // // 
     //       scores.forEach(score => {
     //       sum += score;
     //       });
@@ -635,7 +635,7 @@
 // console.log(Math.random());
 // console.log(Math.floor(Math.random()*3));
 // console.log(Math.floor(Math.random()*3 + 1));
-// const scores = [10, 3, 9]
+// // // // // 
 // let sum = 0;
 // scores.forEach(score => {
 //   sum += score;
@@ -648,7 +648,7 @@
 // console.log(a);
 // console.log(b);
 // console.log(others);
-// const scores = [10, 3, 9]
+// // // // 
 // let sum = 0;
 // scores.forEach(score => {
 //   sum += score;
@@ -917,7 +917,7 @@
     //   }
     // };
     //   const intervalid = setInterval(showTime, 1000);
-    // const scores = [10, 3, 9]
+    // // // // 
     // let sum = 0;
     // scores.forEach(score => {
     //   sum += score;
@@ -1186,7 +1186,7 @@
   //   console.log(characters[0]);
   //   console.log(characters[1].name);
 
-  // const scores = [10, 3, 9]
+  // // // // 
   // let sum = 0;
   // scores.forEach(score => {
   //   sum += score;
@@ -1200,7 +1200,7 @@
   //   console.log(number);
   //   number += 1;
   // }
-  // const scores = [10, 3, 9]
+  // // // // 
   // let sum = 0;
   // scores.forEach(score => {
   //   sum += score;
@@ -1330,7 +1330,7 @@
   
 //   $('body').on('click', '.vanish', function() { $(this).remove();
 //   });
-// const scores = [10, 3, 9]
+// // // // 
 // let sum =0;
 // scores.forEach(score => {
 // sum += score;
@@ -1373,7 +1373,7 @@
 //   alert('hi!')
 // // });
 // let sum = 0;
-// const scores = [10, 3, 9]
+// // // // 
 // scores.forEach(score => {
 // sum += score;
 // });
@@ -1408,7 +1408,7 @@
 //   console.log(posts[0]);
 // //   console.log(posts[1]);
 // let sum = 0;
-// const scores = [10, 3, 9]
+// // // // 
 // scores.forEach(score => {
 //   sum += score;
 // });
@@ -1486,21 +1486,6 @@
   
 //   $('body').on(click',.vanish',function() {
 //   $(this).remove();
-// // //   });
-class Post {
-  constructor(text) {
-  this.text = text;
-  this.likeCount = 0;
-  }
-    
-  show() {
-  console.log(`${this.text} - ${this.likeCount}いいね`);
-  }
-}
-const posts = [
-  new Post('JabaScriptの勉強中…'),
-  new Post('プログラミング楽しい…')
-]
-  // show(posts[0]);
-  posts[0].show();
-  posts[1].show();
+// // // //   });class Post {
+$('a[href*="dotinstall"]').css('background','red');
+$('a[href$="jp"]').css('background','skyblue');

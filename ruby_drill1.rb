@@ -225,4 +225,12 @@
 #   obj = Object.new
 #   # obj.extend Greet
 #   # obj.extend Greet
-# # # # #   obj.say
+# # # # # # # #   obj.say
+ary = Array.new(3,"Ruby")
+p ary #=> ["Ruby", "Ruby", "Ruby"]
+p ary[0].equal?(ary[1]) #=> true
+p ary[1].equal?(ary[2]) #=> true
+p ary[0].equal?(ary[2]) #=> true
+p ary[0].object_id
+p ary[1].object_id
+p ary[2].object_id
