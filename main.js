@@ -1485,7 +1485,14 @@
 //   });
   
 //   $('body').on(click',.vanish',function() {
-//   $(this).remove();
-// // // //   });class Post {
-$('a[href*="dotinstall"]').css('background','red');
-$('a[href$="jp"]').css('background','skyblue');
+// //   $(this).remove();
+let sum = 0;
+const scores = [10, 3, 9]
+scores.forEach(score => {
+sum += score;
+});
+
+const avg = sum / scores.length;
+console.log(Math.floor(avg));
+console.log(Math.ceil(avg));
+console.log(Math.round(avg));
