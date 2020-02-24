@@ -225,8 +225,15 @@
 #   obj = Object.new
 #   # obj.extend Greet
 #   # obj.extend Greet
-# # # # # # # # #   obj.say
-elements = [[1, 4], [2, 3], [3, 6]]
-elements.each do |element|
-  puts "#{element[0]}: #{element[1]}"
+# # # # # # # # # # #   obj.say
+# class Foo
+# end
+# class Bar < Foo
+# # # end
+begin
+1 / 0
+rescue => e
+  puts e
+ensure
+  puts "ensure"
 end

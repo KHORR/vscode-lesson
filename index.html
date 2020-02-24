@@ -18,7 +18,7 @@
      <p>テスト</p>
   <div id=wrapper>
     <!-- <a href = "text.html">リンク</a> -->
-    <a href = "one.html">リンク1</a>    
+    <a href = "one.html",class=".hover">リンク1</a>    
     <a href = "two.html">リンク2</a>
     <a href = "three.html">リンク3</a>
     <p>children</p>
@@ -26,17 +26,49 @@
     <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
     <p><a href="http://dotinstall.com">Dotinstall</a></p>
   </div>
-
+  <p>jQueryの練習</p>
   <button>Add!</button>
 
 
 
-    <input type="text" id="name" value="hello">
-    <select id="members" name="members" value="name">
+    <input type="text" id="name" value="hello" class="input">
+    <select id="members" name="members" value="name" class="select">
       <option>taguchi</option>
       <option>fkoji</option>
-      <option>dotinstall</option>
+      <option>dotinstall</option>      
   </select>
+  <!-- <ul class="remind_posts">
+    <% @remind_posts.each do |post| %>
+      <li class="remind_post">
+        <%= link_to post.question.truncate(50), remind1_post_path(post) %>
+        <dl>
+          <% if post.hint.present? %>
+            <p class="check_hint"><a href="#">ヒントを見る</a></p>
+            <div class="list_hint"> -->
+              <!--<dt class="list_hint_term">Hint</dt>-->
+              <!-- <dd class="list_hint_detail"><%= post.hint %></dd>
+            </div>
+          <% end %> -->
+          <p class="check_answer"><a href="#">答えを見る</a></p>
+          <div class="list_answer">
+            <!--<dt class="list_answer_term">Answer</dt>-->
+          <dd class="list_answer_detail">○○○○○○○○○○○</dd>
+          </div>
+          <p class="memory_lebel_check"><a href="#">記憶レベルを更新する</a>        
+          </p>     
+
+  <form id="memory_lebel_selected" method="post">
+    <select id="select_list">
+      <option selected>選択してください</option>
+      <option>次からリマインドしない</option>
+      <option>5.★★★★★</option>
+      <option>4.★★★★</option>
+      <option>3.★★★</option>
+      <option>2.★★</option>
+      <option>1.★</option>                    
+    </select>  
+  </form>     
+
   <div id="box" style="width:100px;height:100px;background:red;">
     <p>テキスト</p>
   </div>
@@ -55,8 +87,11 @@
       </li>
     </ul>
   </div>
+  <p>Please enter something...</p>
+  <input type="text" id = "mytextbox" onchange="myfunc()">
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="main.js"></script> -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script>
   'use strict';  
     //   $(function() {
@@ -85,6 +120,15 @@
 // window.onload = function() {
 //   $('#main > .item').css('color','red');
 // };
+  
+      // $('body').on('click', '.vanish', function() {
+      //   $(this).remove();
+      // });
+      // $('button').on('click mouseenter', function() {
+      //       console.log('クリックされました！');
+      //       var p = $('<p>').text('vanish').addClass('vanish');
+      //       $(this).before(p);
+      //   })
 
   </script>
   <style>

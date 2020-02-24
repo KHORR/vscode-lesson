@@ -1484,15 +1484,136 @@
 //   $(this).before(p);
 //   });
   
-//   $('body').on(click',.vanish',function() {
-// //   $(this).remove();
-let sum = 0;
-const scores = [10, 3, 9]
-scores.forEach(score => {
-sum += score;
-});
+// // // //   $('body').on(click',.vanishconstconst animals = ["dog", "cat", "sheep"];
+// $('#box').click(function() {
+//   alert('Hi!')
+// // });
+// $('#box').mouseover(function() {
+//   $(this).css('background','green');
+// })
+// .mouseout(function() {
+//   $(this).css('background', 'red');
+// })
+// .mousemove(function(e) {
+//   $(this).text(e.pageX);
+// });
+// $('#box').mouseover(function() {
+//   $(this).css('background', 'green');
+// // //   })
 
-const avg = sum / scores.length;
-console.log(Math.floor(avg));
-console.log(Math.ceil(avg));
-console.log(Math.round(avg));
+// const point = {
+//   x: 100,
+//   y: 180,
+//   };
+  
+//   console.log(point.x);
+
+  // $(".input").mouseenter(function() {
+  //   console.log('マウスオーバーしました');
+  //   $(this).next(".select").slideToggle();
+  // });
+  // $(".input").mouseenter(function() {
+  //   console.log('マウスオーバーしました');
+  //   $(this).next(".select").slideToggle();
+  // });
+
+  // function sum(a, b,c) {
+  //   return a + b + c;
+  // }
+  // const sum = function(a, b,c) {
+  //   return a + b + c;
+  // }
+  //   // sum(1, 2, 3);
+  //   // sum(3, 4, 5);
+  //   const total = sum(1, 2,3) + sum(3, 4, 5);
+  //   console.log(total);
+  const touchStart = function() {
+    const touchPos = $('.input').offset().top;
+    console.log(touchPos);
+    const newPos = $('.input').offset().top;
+    console.log(newPos);
+    // console.log('1秒経過後の位置を表示しています')
+    const moveCheck = function() {
+      if(touchPos == newPos){
+        console.log('1秒経過後、同じ位置です')
+        $('.input').next(".select").slideToggle();
+      }
+    }
+    setTimeout(moveCheck,1000);
+}
+$(document).on('touchstart mouseenter','.input', touchStart)
+    
+
+  // const touchStart = function() {
+  //     const touchPos = $('.memory_lebel_check').offset().top;
+  //     console.log(touchPos);
+  //     const newPos = $('.memory_lebel_check').offset().top;
+  //     console.log(newPos);
+  //     // console.log('1秒経過後の位置を表示しています')
+  //     const moveCheck = function() {
+  //       if(touchPos == newPos){
+  //         console.log('1秒経過後、同じ位置です')
+  //         $('.memory_lebel_check').next("#select_list").slideToggle();
+  //       }
+  //     }
+  //     setTimeout(moveCheck,1000);
+  // }
+  // $(document).on('touchstart mouseenter','.memory_lebel_check', touchStart)
+      
+
+    // const touchPos = $('.input').offset().top;
+    // console.log(touchPos);
+    // const moveChecked = function() {
+    // const newPos = $('.input').offset().top;
+    //     console.log(newPos);
+    //     if(touchPos == newPos) {
+    //       console.log('同じ位置です！')
+    //       }
+    //   }
+    //   setTimeout(moveChecked,100);
+    
+
+    // const TouchStart = function() {
+    //   touchPos = $('.input').offdet().top;
+    //   console.log(touchPos);
+    //   moveCheck = () => {
+    //     nowPos = $('.input').offset().top;
+    //     console.log(newPos)
+    //     if(touchPos == nowPos) {
+    //       console.log('同じ位置です')
+    //       $(this).next(".select").slideToggle();
+    //     }
+    //   }
+    //   setTimeout(moveCheck,100);
+    // }
+// $(".input").TouchStart(function() {
+//   console.log('マウスオーバーしました');
+//   $(this).next(".select").slideToggle();
+// });
+  // const pos1 = $('.input').offset(); 
+  // console.log( pos1 );
+  // const pos2 = $('.input').offset();
+  // console.log( pos2 );
+  // const moveCheck = function(){    
+  //   if(pos1 == pos2){
+  //     console.log('同じ位置です');
+  //       return true;
+  //   } else {
+  //     console.log('位置が異なります')
+  //       return false;
+  //   }
+  // }
+    
+  // console.log(moveCheck);
+  // moveCheck = function(){
+  //   if(pos1 == pos2){
+  //     console.log('同じ位置です');
+  //     return true;
+  //   } else {
+  //     console.log('位置が異なります')
+  //     return false;
+  //   }
+  //   }
+  //   console.log(moveCheck);
+
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charaset="UTF-8">
+    <title>My Vue App</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- daraからUIへの反映 -->
+      <!-- <p>Hello {{ name }}!</p> -->
+      <!-- <p>Hello {{ name.toUpperCase() }}!</p> -->
+       <!-- UI から data へ反映。input タグを使って name を更新。 -->
+      <!-- この input タグに v-model="name" としてあげると、このフォームに入力された値が name と結びつくようになります -->
+      <!-- <p><input type="text" v-model="name"></p> -->
+      <p>記憶レベル {{ name }}</p>
+      <select class="memory_lebel_check_menu" v-model="name">
+        <option selected></option>
+        <option>リマインドの対象からはずす</option>
+        <option>レベル5 ★★★★★</option>
+        <option>レベル4 ★★★★</option>
+        <option>レベル3 ★★★</option>
+        <option>レベル2 ★★</option>
+        <option>レベル1 ★</option>                    
+      </select>
+      <select v-model="name">
+        <option disabled value="">Please select one</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+      <span>Selected: {{ name }}</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue_js_main.js"></script>
+  </body>
+</html>
