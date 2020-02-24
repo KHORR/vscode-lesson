@@ -20,8 +20,11 @@ h1 {
 .list_answer {
   display: none;
 }
-#select_list {
+.select_list {
   display: none;
+}
+.todays_main_lesson {
+  background-color: moccasin;
 }
 
 

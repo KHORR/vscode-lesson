@@ -1544,76 +1544,20 @@
 $(document).on('touchstart mouseenter','.input', touchStart)
     
 
-  // const touchStart = function() {
-  //     const touchPos = $('.memory_lebel_check').offset().top;
-  //     console.log(touchPos);
-  //     const newPos = $('.memory_lebel_check').offset().top;
-  //     console.log(newPos);
-  //     // console.log('1秒経過後の位置を表示しています')
-  //     const moveCheck = function() {
-  //       if(touchPos == newPos){
-  //         console.log('1秒経過後、同じ位置です')
-  //         $('.memory_lebel_check').next("#select_list").slideToggle();
-  //       }
-  //     }
-  //     setTimeout(moveCheck,1000);
-  // }
-  // $(document).on('touchstart mouseenter','.memory_lebel_check', touchStart)
-      
+  const touchStart2 = function() {
+      const touchPos = $(this).offset().top;
+      console.log(touchPos);
+      const newPos = $(this).offset().top;
+      console.log(newPos);
+      // console.log('1秒経過後の位置を表示しています')
+      const moveCheck = function() {
+        if(touchPos == newPos){
+          console.log('1秒経過後、同じ位置です')
+          $('.check_answer').next(".list_answer_detail").slideToggle();
+          $('.memory_lebel_check').next(".select_list").slideToggle();
+        }
+      }
+      setTimeout(moveCheck,1000);
+  }
 
-    // const touchPos = $('.input').offset().top;
-    // console.log(touchPos);
-    // const moveChecked = function() {
-    // const newPos = $('.input').offset().top;
-    //     console.log(newPos);
-    //     if(touchPos == newPos) {
-    //       console.log('同じ位置です！')
-    //       }
-    //   }
-    //   setTimeout(moveChecked,100);
-    
-
-    // const TouchStart = function() {
-    //   touchPos = $('.input').offdet().top;
-    //   console.log(touchPos);
-    //   moveCheck = () => {
-    //     nowPos = $('.input').offset().top;
-    //     console.log(newPos)
-    //     if(touchPos == nowPos) {
-    //       console.log('同じ位置です')
-    //       $(this).next(".select").slideToggle();
-    //     }
-    //   }
-    //   setTimeout(moveCheck,100);
-    // }
-// $(".input").TouchStart(function() {
-//   console.log('マウスオーバーしました');
-//   $(this).next(".select").slideToggle();
-// });
-  // const pos1 = $('.input').offset(); 
-  // console.log( pos1 );
-  // const pos2 = $('.input').offset();
-  // console.log( pos2 );
-  // const moveCheck = function(){    
-  //   if(pos1 == pos2){
-  //     console.log('同じ位置です');
-  //       return true;
-  //   } else {
-  //     console.log('位置が異なります')
-  //       return false;
-  //   }
-  // }
-    
-  // console.log(moveCheck);
-  // moveCheck = function(){
-  //   if(pos1 == pos2){
-  //     console.log('同じ位置です');
-  //     return true;
-  //   } else {
-  //     console.log('位置が異なります')
-  //     return false;
-  //   }
-  //   }
-  //   console.log(moveCheck);
-
-  
+  $(document).on('touchstart mouseenter','.memory_lebel_check', touchStart2)
